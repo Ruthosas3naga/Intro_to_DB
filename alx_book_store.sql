@@ -34,7 +34,7 @@ CREATE TABLE Order_Details (
     order_detail_id INT PRIMARY KEY AUTO INCREMENT,
     order_id INT,
     book_id INT,
-    quantity DOUBLE
+    quantity DOUBLE,
     FOREIGN KEY (Order_id) REFERENCES Orders(Order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
