@@ -7,13 +7,13 @@ CREATE TABLE AUTHORS (
     author_name VARCHAR(215) NOT NULL
 );
 
-CREATE TABLE BOOKS (
+CREATE TABLE Books (
     book_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(130) NOT NULL,
     author_id INT,
     price DOUBLE,
     publication_date DATE,
-    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+    FOREIGN KEY (author_id) REFERENCES AUTHORS(author_id)
 );
 
 CREAT TABLE CUSTOMERS (
