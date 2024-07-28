@@ -16,14 +16,14 @@ CREATE TABLE Books (
     FOREIGN KEY (author_id) REFERENCES AUTHORS(author_id)
 );
 
-CREAT TABLE CUSTOMERS (
+CREAT TABLE Customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) NOT NULL,
     address TEXT
 );
 
-CREATE TABLE ORDERS (
+CREATE TABLE Orders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATE NOT NULL,
